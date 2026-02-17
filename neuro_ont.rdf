@@ -1,0 +1,520 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sambo/ontologies/2026/1/untitled-ontology-3sf/"
+     xml:base="http://www.semanticweb.org/sambo/ontologies/2026/1/untitled-ontology-3sf/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasAgeofOnset -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasAgeofOnset"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasAssociatedDisorder -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasAssociatedDisorder"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasEtiology -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasEtiology"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasFunction -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasFunction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasNeuroPathologyFinding -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasNeuroPathologyFinding">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#isPreferredMedication -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#isPreferredMedication"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Acquired_epileptic_aphasia -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Acquired_epileptic_aphasia">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Aphasia"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Aquired_Language_Disorder"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:comment>Landau-Kleffner Syndrome (LKS), or acquired epileptic aphasia, is a rare childhood disorder (typically ages 3–8) where previously normal children lose language comprehension and expression, often appearing deaf. It involves abnormal EEG, usually with seizure activity during sleep. Early treatment with anticonvulsants or steroids is key.</rdfs:comment>
+        <rdfs:label>LKS</rdfs:label>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F230438007&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Aphasia -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Aphasia"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Aquired_Language_Disorder -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Aquired_Language_Disorder"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Atypical_absence_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Atypical_absence_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy_with_myoclonic_absence"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Autosomal_Dominant_Partial_Epilepsy_With_Auditory_Features -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Autosomal_Dominant_Partial_Epilepsy_With_Auditory_Features">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Autosomal_recessive_cerebellar_ataxia -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Autosomal_recessive_cerebellar_ataxia">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Uncat"/>
+        <rdfs:comment>Autosomal recessive cerebellar ataxias (ARCAs) are a diverse group of rare,, progressive neurodegenerative disorders characterized by incoordination, imbalance, and speech impairment (ataxia) often beginning in childhood or early adulthood. Caused by inherited genetic mutations affecting the cerebellum or spinal cord, they are classified based on age of onset, associated symptoms (spasticity, neuropathy), and metabolic, degenerative, or congenital causes.</rdfs:comment>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F1237625002&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Benign_Rolandic_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Benign_Rolandic_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Localization-related_idiopathic_epilepsy"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Benign_childhood_epilepsy_with_centrotemporal_spikes -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Benign_childhood_epilepsy_with_centrotemporal_spikes">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Benign_Rolandic_epilepsy"/>
+        <rdfs:comment>Benign Rolandic Epilepsy (BRE) or Self-Limited Epilepsy with Centrotemporal Spikes (SeLECTS) is the most common childhood epilepsy (15% of cases), typically occurring between ages 6 and 12. It causes brief, focal nocturnal seizures (twitching, drooling, speech issues) that usually resolve by puberty, often requiring no medication.</rdfs:comment>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F434551000124106&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Benign_neonatal_convulsions -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Benign_neonatal_convulsions">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neonatal_Disorder"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neonatal_seizure"/>
+        <rdfs:comment>Benign neonatal convulsions are self-limited, typically idiopathic, or genetic (often KCNQ2/KCNQ3 mutations) seizure disorders, such as benign familial neonatal epilepsy or 5th-day fits, appearing in healthy newborns around days 2-5 of life. They are characterized by focal clonic or tonic seizures, often with apnea, that resolve within 1–4 months without lasting neurological deficits, although ~14% may later develop epilepsy.</rdfs:comment>
+        <rdfs:label>Benign neonatal convulsions</rdfs:label>
+        <rdfs:label>Benign neonatal seizures</rdfs:label>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F38281008&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Central_nervous_system -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Central_nervous_system"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Complex_partial_seizure -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Complex_partial_seizure">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Seizure"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Drug-induced_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Drug-induced_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:comment>Drug-induced epilepsy and seizures result from acute toxicity or withdrawal from substances (illicit drugs, alcohol, or medications) that lower the seizure threshold or over-excite brain neurotransmitters. Roughly 9% of epilepsy cases are linked to drug abuse. Common causes include stimulants (cocaine, amphetamines), antidepressants, and antibiotics.</rdfs:comment>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F230441003&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsia_partialis_continua -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsia_partialis_continua">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epileptic_Seizure"/>
+        <rdfs:comment>A prolonged focal-onset clonic seizure occurring and limited to specific parts of the body such as the hand, face, arm or leg.</rdfs:comment>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F241006&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy_with_myoclonic_absence -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy_with_myoclonic_absence">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Generic_generalized_epilepsy"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epileptic_Seizure -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epileptic_Seizure">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Seizure"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epileptic_encephalopathy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epileptic_encephalopathy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neurodevelopmental_disorder"/>
+        <rdfs:comment>Epileptic encephalopathy is a group of severe, often early-childhood disorders where frequent, drug-resistant seizure activity and severe EEG abnormalities directly cause progressive cognitive, behavioral, and developmental decline. These conditions involve developmental regression or delay, such as losing motor skills, and are often linked to genetic, metabolic, or structural brain issues, with no known cure.</rdfs:comment>
+        <rdfs:label>Epileptic encephalopathy</rdfs:label>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F723125008&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Focal_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Focal_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#localization_related_epilepsy"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gene -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gene"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Generalized_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Generalized_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:comment>Generalized epilepsy, also known as primary or genetic epilepsy, is a disorder characterized by recurrent seizures originating from abnormal, synchronized electrical activity throughout both sides of the brain simultaneously. It typically features no warning, loss of consciousness, and varied symptoms like staring, muscle jerking, or stiffening.</rdfs:comment>
+        <rdfs:label>Generalised epilepsy</rdfs:label>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F19598007&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Generalized_epilepsy_with_febrile_seizures_plus -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Generalized_epilepsy_with_febrile_seizures_plus">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F444441000124109&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Generic_generalized_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Generic_generalized_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Genetic_generalized_epilepsy"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Genetic_generalized_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Genetic_generalized_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Grand_mal_status -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Grand_mal_status">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Idiopathic_generalized_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Idiopathic_generalized_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Generic_generalized_epilepsy"/>
+        <rdfs:comment>A distinct sub-group of genetic generalized epilepsy that includes only four epilepsy syndromes: childhood absence epilepsy, juvenile absence epilepsy, juvenile myoclonic epilepsy, and epilepsy with generalized tonic-clonic seizures alone. A distinct sub-group of genetic generalised epilepsy that includes only four epilepsy syndromes: childhood absence epilepsy, juvenile absence epilepsy, juvenile myoclonic epilepsy, and epilepsy with generalised tonic-clonic seizures alone.</rdfs:comment>
+        <rdfs:label>Idiopathic generalised epilepsy</rdfs:label>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F36803009&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Idiopathic_myoclonic_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Idiopathic_myoclonic_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Insular_Epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Insular_Epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Lennox-Gastaut_Syndrome -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Lennox-Gastaut_Syndrome">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F230418006&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Localization-related_idiopathic_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Localization-related_idiopathic_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Focal_epilepsy"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Motor_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Motor_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Focal_epilepsy"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F307356008&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Myoclonic_absence_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Myoclonic_absence_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy_with_myoclonic_absence"/>
+        <rdfs:comment>Epilepsy with myoclonic-absences is a rare form of epilepsy.</rdfs:comment>
+        <rdfs:label>Myoclonic absence seizures</rdfs:label>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F431141000124100&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Myoclonic_absence_epilepsy_refractory -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Myoclonic_absence_epilepsy_refractory">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy_with_myoclonic_absence"/>
+        <rdfs:comment>Epilepsy with myoclonic absences (EMA) is a rare, often pharmaco-resistant childhood syndrome characterized by daily 10–60 second seizures featuring rhythmic jerking of extremities, loss of awareness, and 3 Hz spike-wave EEG discharges. Treatment usually involves valproic acid, often combined with ethosuximide, lamotrigine, or benzodiazepines, with a high risk of cognitive impairment.</rdfs:comment>
+        <rdfs:label>Myoclonic absence seizures, non-refractory</rdfs:label>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F431141000124100&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neonatal_Disorder -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neonatal_Disorder"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neonatal_seizure -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neonatal_seizure">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Seizure"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neurodevelopmental_disorder -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neurodevelopmental_disorder"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Perioral_myoclonia_with_absences -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Perioral_myoclonia_with_absences">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Generic_generalized_epilepsy"/>
+        <rdfs:comment>A rare epilepsy syndrome characterized by absence seizures with perioral myoclonia as the main seizure type, accompanied by generalized tonic-clonic seizures, appearing before or together with absences. Consciousness is usually impaired, although to variable degree. Commonly observed absence status epilepticus, poor response to antiepileptic drugs and persistence of seizures into adulthood, in the presence of normal neurological status and intelligence, are additional clinical features of this syndrome. A rare epilepsy syndrome characterised by absence seizures with perioral myoclonia as the main seizure type, accompanied by generalised tonic-clonic seizures, appearing before or together with absences. Consciousness is usually impaired, although to variable degree. Commonly observed absence status epilepticus, poor response to antiepileptic drugs and persistence of seizures into adulthood, in the presence of normal neurological status and intelligence, are additional clinical features of this syndrome.</rdfs:comment>
+        <rdfs:label>POMA - perioral myoclonia with absences</rdfs:label>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F766815007&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Post-traumatic_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Post-traumatic_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:comment>epilepsy from traumatic injury</rdfs:comment>
+        <rdfs:label>Traumatic epilepsy Post-traumatic epilepsy (disorder) PTE - Post-traumatic epilepsy Epilepsy due to and following traumatic brain injury</rdfs:label>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F75023009&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Psychomotor_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Psychomotor_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Focal_epilepsy"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F361123003&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Rasmussen_Syndrome -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Rasmussen_Syndrome">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F230191005&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#SCN1A -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#SCN1A">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gene"/>
+        <rdfs:label>SCN1A</rdfs:label>
+        <rdfs:seeAlso>https://www.ncbi.nlm.nih.gov/gene/?term=SCN1A</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Seizure -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Seizure"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Status -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Status"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Status_epilepticus -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Status_epilepticus">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epileptic_Seizure"/>
+        <rdfs:comment>An abnormally prolonged continuous epileptic seizure or cluster of epileptic seizures in which the individual does not return to normal between seizures. The definition of abnormal duration varies based on seizure type.</rdfs:comment>
+        <rdfs:comment>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F230456007&amp;jump_to_nav=true</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Temporal_lobe_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Temporal_lobe_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#localization_related_epilepsy"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F193000002&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Tonic_clonic_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Tonic_clonic_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:comment>Generalized tonic-clonic seizures (formerly grand mal) are severe, often genetic, epileptic events characterized by immediate loss of consciousness, stiffening (tonic phase), and violent rhythmic jerking (clonic phase). They usually last 1–3 minutes, often involving tongue biting, incontinence, and breathing difficulties. Treatment involves antiepileptic medications, diet, or device therapies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Uncat -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Uncat"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#localization_related_epilepsy -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#localization_related_epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#nonconvulsive_status_epilepticus -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#nonconvulsive_status_epilepticus">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Status_epilepticus"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Myoclonic_absence_seizures,_non-refractory -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Myoclonic_absence_seizures,_non-refractory">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy_with_myoclonic_absence"/>
+        <rdfs:comment>Epilepsy with myoclonic absences (EMA) is a rare, often pharmaco-resistant childhood syndrome characterized by daily 10–60 second seizures featuring rhythmic jerking of extremities, loss of awareness, and 3 Hz spike-wave EEG discharges. Treatment usually involves valproic acid, often combined with ethosuximide, lamotrigine, or benzodiazepines, with a high risk of cognitive impairment.</rdfs:comment>
+        <rdfs:label>Myoclonic absence seizures, refractory</rdfs:label>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F431141000124100&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
