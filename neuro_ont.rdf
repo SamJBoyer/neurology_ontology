@@ -5,8 +5,12 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders">
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:Ontology>
     
 
 
@@ -88,6 +92,15 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Abilify -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Abilify">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F352393&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Acquired_epileptic_aphasia -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Acquired_epileptic_aphasia">
@@ -139,6 +152,15 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Banzel -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Banzel">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F824296&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Benign_Rolandic_epilepsy -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Benign_Rolandic_epilepsy">
@@ -171,9 +193,82 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#CHRNA1 -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#CHRNA1">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gene"/>
+        <rdfs:seeAlso>https://www.ncbi.nlm.nih.gov/gene/?term=CHRNA1</rdfs:seeAlso>
+        <skos:altLabel>ACHRA
+ACHRD</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Calmera -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Calmera">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Carbatrol -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Carbatrol">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F215879&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Central_nervous_system -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Central_nervous_system"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Citalopram -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Citalopram">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F2556&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Clomipramine -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Clomipramine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#clopiramine_hydrochloride"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Calmera"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F2597&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Clonazepam -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Clonazepam">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Klonopin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F2598&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
     
 
 
@@ -185,12 +280,117 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Concerta -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Concerta">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Depacon -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Depacon">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F2658096&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Depakene -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Depakene">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F203245&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Depakote -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Depakote">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F216459&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DepakoteER -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DepakoteER">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Desipramine -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Desipramine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#despiramine_hydrochloride"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Norpramin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Droperidol -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Droperidol">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F3648&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Drug-induced_epilepsy -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Drug-induced_epilepsy">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
         <rdfs:comment>Drug-induced epilepsy and seizures result from acute toxicity or withdrawal from substances (illicit drugs, alcohol, or medications) that lower the seizure threshold or over-excite brain neurotransmitters. Roughly 9% of epilepsy cases are linked to drug abuse. Common causes include stimulants (cocaine, amphetamines), antidepressants, and antibiotics.</rdfs:comment>
         <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F230441003&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Eitology -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Eitology"/>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Elavil -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Elavil">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F42940&amp;jump_to_nav=true</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -239,10 +439,127 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilim -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilim">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F2656891&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Ethosuximide -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Ethosuximide">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Zarontin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F4135&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Ezogabine -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Ezogabine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F1112990&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Fanapt -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Fanapt">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Fluphenazine -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Fluphenazine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#fluphenazine_hydrochloride"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F4496&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Fluvoxamine -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Fluvoxamine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Fluvoxamine_maleate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Fluvoxamine_maleate -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Fluvoxamine_maleate">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Focal_epilepsy -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Focal_epilepsy">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#localization_related_epilepsy"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#GABRD -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#GABRD">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gene"/>
+        <rdfs:seeAlso>https://www.ncbi.nlm.nih.gov/gene/?term=GABRD</rdfs:seeAlso>
+        <skos:altLabel>EIG10
+EJM7</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gabapentin -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gabapentin">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gabapentin_enacarbil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Horizant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gabapentin_enacarbil -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gabapentin_enacarbil">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
     </owl:Class>
     
 
@@ -281,6 +598,14 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Genetic_defect -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Genetic_defect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Eitology"/>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Genetic_generalized_epilepsy -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Genetic_generalized_epilepsy">
@@ -293,6 +618,38 @@
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Grand_mal_status">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Haldol -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Haldol">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F151839&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Haloperidol -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Haloperidol">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#haloperidol_decanoate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F5093&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Horizant -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Horizant">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
     </owl:Class>
     
 
@@ -316,10 +673,122 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Iloperidone -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Iloperidone">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Fanapt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F73178&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Imipramine -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Imipramine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#imipramine_pamoate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F5691&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Inapsine -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Inapsine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Inflamation -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Inflamation">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Eitology"/>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Insular_Epilepsy -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Insular_Epilepsy">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Invega -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Invega">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Isocarboxazid -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Isocarboxazid">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F6011&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Keppra -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Keppra">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F261547&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Klonopin -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Klonopin">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Lacosamide -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Lacosamide">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Motpoly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F6011&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Lamictal -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Lamictal">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F196502&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Latuda -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Latuda">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
     </owl:Class>
     
 
@@ -341,11 +810,137 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Luminal -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Luminal">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Lurasidone -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Lurasidone">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#lurasidone_hydrochloride"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Latuda"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F1040028&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Luvox -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Luvox">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Maprotiline -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Maprotiline">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Maprotiline_hydrochloride"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Maprotiline_hydrochloride -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Maprotiline_hydrochloride">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Marplan -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Marplan">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Marplan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Mellaril-S -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Mellaril-S">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Metabolic_cause -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Metabolic_cause">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Eitology"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Methotrimeprazine -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Methotrimeprazine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#levomepromazine_maleate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F6852&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Methylphenidate -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Methylphenidate">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Concerta"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Motor_epilepsy -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Motor_epilepsy">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Focal_epilepsy"/>
         <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F307356008&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Motpoly -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Motpoly">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
     </owl:Class>
     
 
@@ -372,6 +967,37 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Navane -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Navane">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Nefazodone -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Nefazodone">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Nefazodone_hydrochloride"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F31565&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Nefazodone_hydrochloride -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Nefazodone_hydrochloride">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neonatal_Disorder -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neonatal_Disorder"/>
@@ -392,6 +1018,73 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Norpramin -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Norpramin">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Nortriptyline -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Nortriptyline">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#nortriptyline_hydrochloride"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F7531&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Olanzapine -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Olanzapine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#olanzapine_pamoate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Symbyax"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F61381&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Onfi -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Onfi">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Paliperidone -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Paliperidone">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Invega"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F679314&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Perioral_myoclonia_with_absences -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Perioral_myoclonia_with_absences">
@@ -399,6 +1092,21 @@
         <rdfs:comment>A rare epilepsy syndrome characterized by absence seizures with perioral myoclonia as the main seizure type, accompanied by generalized tonic-clonic seizures, appearing before or together with absences. Consciousness is usually impaired, although to variable degree. Commonly observed absence status epilepticus, poor response to antiepileptic drugs and persistence of seizures into adulthood, in the presence of normal neurological status and intelligence, are additional clinical features of this syndrome. A rare epilepsy syndrome characterised by absence seizures with perioral myoclonia as the main seizure type, accompanied by generalised tonic-clonic seizures, appearing before or together with absences. Consciousness is usually impaired, although to variable degree. Commonly observed absence status epilepticus, poor response to antiepileptic drugs and persistence of seizures into adulthood, in the presence of normal neurological status and intelligence, are additional clinical features of this syndrome.</rdfs:comment>
         <rdfs:label>POMA - perioral myoclonia with absences</rdfs:label>
         <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F766815007&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Perphenazine -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Perphenazine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugIngrediant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasForm"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#perphenazine_enanthate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F8076&amp;jump_to_nav=true</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -423,11 +1131,47 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Quillivant -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Quillivant">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F1312584&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Rasmussen_Syndrome -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Rasmussen_Syndrome">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
         <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F230191005&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Remeron -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Remeron">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F134774&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Risperdal -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Risperdal">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F152318&amp;jump_to_nav=true</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Ritalin -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Ritalin">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F224917&amp;jump_to_nav=true</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -438,6 +1182,25 @@
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gene"/>
         <rdfs:label>SCN1A</rdfs:label>
         <rdfs:seeAlso>https://www.ncbi.nlm.nih.gov/gene/?term=SCN1A</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#SCN2A -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#SCN2A">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gene"/>
+        <rdfs:seeAlso>https://www.ncbi.nlm.nih.gov/gene/?term=SCN2A</rdfs:seeAlso>
+        <skos:altLabel>BFIC3
+BFIS3</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Sarafem -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Sarafem">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
     </owl:Class>
     
 
@@ -460,6 +1223,31 @@
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epileptic_Seizure"/>
         <rdfs:comment>An abnormally prolonged continuous epileptic seizure or cluster of epileptic seizures in which the individual does not return to normal between seizures. The definition of abnormal duration varies based on seizure type.</rdfs:comment>
         <rdfs:comment>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F230456007&amp;jump_to_nav=true</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Structural_cause -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Structural_cause">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Eitology"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Symbyax -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Symbyax">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Tegretol -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Tegretol">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F203029&amp;jump_to_nav=true</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -488,6 +1276,62 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Zarontin -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Zarontin">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugName"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#clopiramine_hydrochloride -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#clopiramine_hydrochloride">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#despiramine_hydrochloride -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#despiramine_hydrochloride">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#fluphenazine_hydrochloride -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#fluphenazine_hydrochloride">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#haloperidol_decanoate -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#haloperidol_decanoate">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#imipramine_pamoate -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#imipramine_pamoate">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#levomepromazine_maleate -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#levomepromazine_maleate">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#localization_related_epilepsy -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#localization_related_epilepsy">
@@ -496,10 +1340,42 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#lurasidone_hydrochloride -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#lurasidone_hydrochloride">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    </owl:Class>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#nonconvulsive_status_epilepticus -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#nonconvulsive_status_epilepticus">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Status_epilepticus"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#nortriptyline_hydrochloride -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#nortriptyline_hydrochloride">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#olanzapine_pamoate -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#olanzapine_pamoate">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#perphenazine_enanthate -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#perphenazine_enanthate">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#DrugForm"/>
     </owl:Class>
     
 
