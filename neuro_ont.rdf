@@ -37,6 +37,14 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasAssociatedMutationIn -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasAssociatedMutationIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasEtiology -->
 
     <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasEtiology"/>
@@ -67,6 +75,14 @@
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasPreferredMedication -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasPreferredMedication">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename -->
 
     <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasTradename">
@@ -78,6 +94,26 @@
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#isPreferredMedication -->
 
     <owl:ObjectProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#isPreferredMedication"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -116,13 +152,17 @@
 
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Aphasia -->
 
-    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Aphasia"/>
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Aphasia">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#NeurologicalDisorder"/>
+    </owl:Class>
     
 
 
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Aquired_Language_Disorder -->
 
-    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Aquired_Language_Disorder"/>
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Aquired_Language_Disorder">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#NeurologicalDisorder"/>
+    </owl:Class>
     
 
 
@@ -138,6 +178,12 @@
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Autosomal_Dominant_Partial_Epilepsy_With_Auditory_Features">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasPreferredMedication"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Depakote"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -223,7 +269,9 @@ ACHRD</skos:altLabel>
 
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Central_nervous_system -->
 
-    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Central_nervous_system"/>
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Central_nervous_system">
+        <rdfs:comment>i have no idea why I made this</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -382,7 +430,22 @@ ACHRD</skos:altLabel>
 
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Eitology -->
 
-    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Eitology"/>
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Eitology">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasEtiology"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#GeneticDefect"/>
+                            <rdf:Description rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Inflamation"/>
+                            <rdf:Description rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#StructuralCause"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
@@ -399,6 +462,12 @@ ACHRD</skos:altLabel>
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsia_partialis_continua">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epileptic_Seizure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasEtiology"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#MetabolicCause"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A prolonged focal-onset clonic seizure occurring and limited to specific parts of the body such as the hand, face, arm or leg.</rdfs:comment>
         <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F241006&amp;jump_to_nav=true</rdfs:seeAlso>
     </owl:Class>
@@ -407,7 +476,9 @@ ACHRD</skos:altLabel>
 
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy -->
 
-    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#NeurologicalDisorder"/>
+    </owl:Class>
     
 
 
@@ -564,6 +635,12 @@ EJM7</skos:altLabel>
     
 
 
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gender -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gender"/>
+    
+
+
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gene -->
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gene"/>
@@ -585,6 +662,20 @@ EJM7</skos:altLabel>
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Generalized_epilepsy_with_febrile_seizures_plus">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasAssociatedMutationIn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#GABRD"/>
+                            <rdf:Description rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#SCN1A"/>
+                            <rdf:Description rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#SCN2A"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F444441000124109&amp;jump_to_nav=true</rdfs:seeAlso>
     </owl:Class>
     
@@ -598,10 +689,16 @@ EJM7</skos:altLabel>
     
 
 
-    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Genetic_defect -->
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#GeneticDefect -->
 
-    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Genetic_defect">
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#GeneticDefect">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Eitology"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasEtiology"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#GeneticDefect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -723,6 +820,12 @@ EJM7</skos:altLabel>
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Insular_Epilepsy">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Epilepsy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasEtiology"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#StructuralCause"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -891,9 +994,9 @@ EJM7</skos:altLabel>
     
 
 
-    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Metabolic_cause -->
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#MetabolicCause -->
 
-    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Metabolic_cause">
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#MetabolicCause">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Eitology"/>
     </owl:Class>
     
@@ -1000,7 +1103,9 @@ EJM7</skos:altLabel>
 
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neonatal_Disorder -->
 
-    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neonatal_Disorder"/>
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neonatal_Disorder">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#NeurologicalDisorder"/>
+    </owl:Class>
     
 
 
@@ -1014,7 +1119,15 @@ EJM7</skos:altLabel>
 
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neurodevelopmental_disorder -->
 
-    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neurodevelopmental_disorder"/>
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Neurodevelopmental_disorder">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#NeurologicalDisorder"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#NeurologicalDisorder -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#NeurologicalDisorder"/>
     
 
 
@@ -1082,6 +1195,12 @@ EJM7</skos:altLabel>
         </rdfs:subClassOf>
         <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/RXNORM/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FRXNORM%2F679314&amp;jump_to_nav=true</rdfs:seeAlso>
     </owl:Class>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patients -->
+
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patients"/>
     
 
 
@@ -1207,7 +1326,9 @@ BFIS3</skos:altLabel>
 
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Seizure -->
 
-    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Seizure"/>
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Seizure">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#NeurologicalDisorder"/>
+    </owl:Class>
     
 
 
@@ -1227,9 +1348,9 @@ BFIS3</skos:altLabel>
     
 
 
-    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Structural_cause -->
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#StructuralCause -->
 
-    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Structural_cause">
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#StructuralCause">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Eitology"/>
     </owl:Class>
     
@@ -1256,6 +1377,12 @@ BFIS3</skos:altLabel>
 
     <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Temporal_lobe_epilepsy">
         <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#localization_related_epilepsy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#hasPreferredMedication"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Tegretol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F193000002&amp;jump_to_nav=true</rdfs:seeAlso>
     </owl:Class>
     
@@ -1272,7 +1399,9 @@ BFIS3</skos:altLabel>
 
     <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Uncat -->
 
-    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Uncat"/>
+    <owl:Class rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Uncat">
+        <rdfs:subClassOf rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#NeurologicalDisorder"/>
+    </owl:Class>
     
 
 
@@ -1388,6 +1517,105 @@ BFIS3</skos:altLabel>
         <rdfs:label>Myoclonic absence seizures, refractory</rdfs:label>
         <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;lang=en&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F431141000124100&amp;jump_to_nav=true</rdfs:seeAlso>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Female -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Female">
+        <rdf:type rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Male -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Male">
+        <rdf:type rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Others -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Others">
+        <rdf:type rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient1 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient1">
+        <rdf:type rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patients"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient2 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient2">
+        <rdf:type rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patients"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient3 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient3">
+        <rdf:type rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patients"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient4 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient4">
+        <rdf:type rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patients"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient5 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient5">
+        <rdf:type rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patients"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient6 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient6">
+        <rdf:type rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patients"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient7 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient7">
+        <rdf:type rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patients"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient8 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patient8">
+        <rdf:type rdf:resource="urn:absolute:www.case.edu/PQHS416/NeurologicalDisorders#Patients"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
